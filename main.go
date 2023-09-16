@@ -40,13 +40,3 @@ func main() {
 		fmt.Println("\033[31m%s\033[0m\n", err.Error())
 	}
 }
-
-func foo() *cli.Command {
-	return &cli.Command{
-		Name:  "foo",
-		Usage: "foo",
-		Action: func(c *cli.Context) error {
-			return nil
-		},
-	}
-}
