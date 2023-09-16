@@ -4,7 +4,7 @@
 GOCMD=go
 GOBUILD=$(GOCMD) build
 GOCLEAN=$(GOCMD) clean
-BINARY_NAME=inctl
+BINARY_NAME=goping
 
 all: build
 build:

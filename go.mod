@@ -1,4 +1,4 @@
-module github.com/rhbind/goping
+module goping
 
 go 1.21.1
 
