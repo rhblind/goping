@@ -5,6 +5,7 @@ import (
 	"os"
 
 	"goping/cmd"
+	"goping/lib"
 
 	"github.com/urfave/cli/v2"
 )
@@ -17,6 +18,12 @@ const (
 	cliAuthorEmail  = "rhblind@gmail.com"
 	cliDescription1 = "goping is a ping machine that can ping multiple hosts concurrently.\n"
 	cliDescription2 = "It is an example project for me to learn how to do concurrency in Go."
+)
+
+var (
+	pingCategory = lib.CLICategory{
+		Name: "ping",
+	}
 )
 
 func main() {
@@ -33,6 +40,7 @@ func main() {
 		},
 		Commands: []*cli.Command{
 			cmd.VersionCommand(),
+			cmd.PingCommand(&pingCategory),
 		},
 	}
 
