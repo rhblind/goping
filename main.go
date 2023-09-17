@@ -22,7 +22,8 @@ const (
 
 var (
 	pingCategory = lib.CLICategory{
-		Name: "ping",
+		Name:  "ping",
+		Usage: "ping a host or cidr range",
 	}
 )
 

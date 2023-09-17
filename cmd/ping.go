@@ -13,8 +13,8 @@ import (
 
 func PingCommand(ping *lib.CLICategory) *cli.Command {
 	return &cli.Command{
-		Name:    "ping",
-		Usage:   "ping a host or cidr range",
+		Name:    ping.Name,
+		Usage:   ping.Usage,
 		Aliases: []string{"p"},
 		Action: func(c *cli.Context) error {
 			arguments := c.Args().Slice()
